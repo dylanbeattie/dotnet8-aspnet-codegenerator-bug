@@ -15,7 +15,7 @@ If you uncomment the call to builder.DoNothing(), this command fails with:
     at Microsoft.VisualStudio.Web.CodeGeneration.CodeGenCommand.Execute(String[] args)
 */
 
-builder.DoNothing();
+// builder.DoNothing();
 
 builder.Services.AddControllersWithViews();
 var sqliteConnection = new SqliteConnection("Data Source=:memory:");

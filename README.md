@@ -40,7 +40,29 @@ To verify the cause, comment out  `Program.cs` line 18:
 // builder.DoNothing();
 ```
 
-and re-run the `aspnet-codegenerator` command.
+and re-run the `aspnet-codegenerator` command; it should produce the expected output:
+
+```
+Building project ...
+Finding the generator 'controller'...
+Running the generator 'controller'...
+
+Minimal hosting scenario!
+Attempting to compile the application in memory.
+Attempting to figure out the EntityFramework metadata for the model and DbContext: 'Artist'
+
+Using database provider 'Microsoft.EntityFrameworkCore.Sqlite'!
+
+Added Controller : '\ArtistsController.cs'.
+Added View : \Views\Artists\Create.cshtml
+Added View : \Views\Artists\Edit.cshtml
+Added View : \Views\Artists\Details.cshtml
+Added View : \Views\Artists\Delete.cshtml
+Added View : \Views\Artists\Index.cshtml
+RunTime 00:00:07.56
+```
+
+
 
 
 
